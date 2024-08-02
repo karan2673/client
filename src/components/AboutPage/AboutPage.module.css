@@ -1,0 +1,91 @@
+/* Heading Page */
+.about_container {
+  display: flex;
+  justify-content: center; /* Centering the card container horizontally */
+}
+
+.about_container .about_header {
+  display: grid;
+  grid-template-rows: 20% 80%;
+  height: 110px;
+  width: 100%;
+  background-color: #f7fafd;
+}
+
+.about_header h3 {
+  color: #2596be;
+  padding-left: 150px;
+  font-weight: 500;
+}
+
+.about_header h3 span {
+  color: gray;
+  font-weight: 500;
+}
+.about_header h1 {
+  font-size: 40px;
+  padding-left: 150px;
+}
+
+/* AboutPage.module.css */
+.about-page-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 40px;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.about-image img,
+.history-image img {
+  display: block;
+  margin: 20px auto;
+}
+
+.about-info,
+.history-info {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-info h2,
+.history-info h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-info p,
+.history-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #666;
+  text-align: justify;
+}
+
+.about-button,
+.history-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.about-button:hover,
+.history-button:hover {
+  background-color: #0056b3;
+}

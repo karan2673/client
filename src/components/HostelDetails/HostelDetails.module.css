@@ -1,0 +1,183 @@
+/* Details Container */
+.details_container {
+  background-color: #f7fafd;
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.details_container .details_header {
+  display: grid;
+  grid-template-rows: 20% 80%;
+  height: 110px;
+  width: 100%;
+  background-color: #f7fafd;
+}
+
+.details_header h3 {
+  color: #2596be;
+  padding-left: 150px;
+  font-weight: 500;
+}
+
+.details_header h3 span {
+  color: gray;
+  font-weight: 500;
+}
+
+.details_header h1 {
+  font-size: 40px;
+  padding-left: 150px;
+}
+
+/* Booking Button */
+.booking_button {
+  padding: 30px;
+}
+
+.booking_button button {
+  border: none;
+  background-color: #2596be;
+  color: white;
+  font-weight: 700;
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.booking_button button:hover {
+  transform: scale(1.1);
+  background-color: #1db978;
+  color: aliceblue;
+}
+
+/* Hostel Swiper */
+.hostel_swiper {
+  margin-top: 20px;
+}
+
+.hostel_swiper .myswiper {
+  background-color: white;
+}
+/* Details Data */
+.details_data {
+  color: #8a939b;
+
+  padding: 20px;
+  background-color: #f7fafd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Description Room */
+.details_description h2 {
+  font-weight: 600;
+  color: #2596be;
+  text-align: center;
+}
+.details_description p {
+  color: #8a939b;
+
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hostel Rules */
+.hostel_rules {
+  width: 100%;
+  height: 320px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.hostel_rules h2 {
+  font-weight: 600;
+  color: #2596be;
+}
+.hostel_rules .row {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.hostel_rules .row .column {
+  color: #8a939b;
+  display: grid;
+  grid-template-columns: 5% 90%;
+  text-align: justify;
+}
+
+/* Address and Email */
+.details_rooms h2 {
+  font-weight: 600;
+  color: #2596be;
+  text-align: left;
+}
+
+.details_rooms .rooms {
+  width: 400px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.rooms .rooms_category {
+  display: grid;
+  grid-template-columns: 20% 50%;
+}
+
+.rooms .rooms_price {
+  display: grid;
+  grid-template-columns: 20% 50%;
+}
+
+.rooms_price span {
+  margin-top: 2px;
+}
+
+.rooms_category span {
+  margin-top: 2px;
+}
+
+.details_address,
+.details_email,
+.details_contact {
+  margin-top: 10px;
+  width: 200px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.details_address span,
+.details_email span,
+.details_contact span {
+  margin-top: 2px;
+}
+
+.amenities h2 {
+  font-weight: 600;
+  color: #2596be;
+}
+
+.amenities .facilities {
+  width: 450px;
+  height: 120px;
+  display: grid;
+  grid-template-rows: 40% 40% 40%;
+}
+
+.facilities .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.facilities .row .column {
+  display: grid;
+  grid-template-columns: 26% 70%;
+}
+
+.facilities .row .column p {
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 3px;
+}

@@ -1,0 +1,61 @@
+/* HostelForm.module.css */
+.hostel_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  height: 84vh;
+}
+
+.hostel_form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 10px; /* Gap between grid items */
+  width: 600px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* Change the background color as needed */
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.room_input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.btn {
+  font-weight: 600;
+  color: white;
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+/* Additional styling for the form elements if needed */

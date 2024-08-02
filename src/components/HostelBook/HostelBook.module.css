@@ -1,0 +1,74 @@
+/* Header */
+.HostelBook_container {
+  display: flex;
+  justify-content: center; /* Centering the card container horizontally */
+}
+
+.HostelBook_details_header {
+  display: grid;
+  grid-template-rows: 20% 80%;
+  height: 110px;
+  width: 100%;
+  background-color: #f7fafd;
+}
+
+.HostelBook_details_header h3 {
+  color: #2596be;
+  padding-left: 150px;
+  font-weight: 500;
+}
+
+.HostelBook_details_header h1 {
+  font-size: 40px;
+  padding-left: 150px;
+}
+/* HostelBook.module.css */
+.book_container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.card_element {
+  margin-bottom: 20px;
+}
+
+.input_field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* HostelBook.module.css */
+.amount_input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.amount_input[readonly] {
+  background-color: #f4f4f4;
+  cursor: not-allowed;
+}

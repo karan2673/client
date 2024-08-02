@@ -1,0 +1,149 @@
+/* .book_container */
+.book_container {
+  display: flex;
+  justify-content: center; /* Centering the card container horizontally */
+}
+
+.book_container .book_header {
+  display: grid;
+  grid-template-rows: 20% 80%;
+  height: 110px;
+  width: 100%;
+  background-color: #f7fafd;
+}
+
+.book_header h3 {
+  color: #2596be;
+  padding-left: 150px;
+  font-weight: 500;
+}
+
+.book_header h3 span {
+  color: gray;
+  font-weight: 500;
+}
+.book_header h1 {
+  font-size: 40px;
+  padding-left: 150px;
+}
+/* Check Box */
+.checkbox {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 30px;
+  font-size: 16px;
+  font-weight: 550;
+  color: #0f4c62;
+  gap: 10px;
+}
+
+/* Book Section */
+.book_section {
+  margin-top: 6px;
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  border-spacing: 0 20px; /* Add spacing between rows */
+}
+
+.book_card {
+  display: flex;
+  width: 800px;
+  height: 230px;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking_image,
+.booking_data {
+  height: auto;
+  width: 50%;
+}
+
+.booking_image img {
+  width: 100%;
+  height: 210px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  object-fit: cover;
+}
+
+.booking_data {
+  height: auto;
+  padding: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.book_head {
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.book_table {
+  margin-top: 10px;
+}
+
+.book_table .book_data {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+.book_table .book_category {
+  margin-top: 2px;
+  display: grid;
+  grid-template-rows: 25% 35%;
+}
+
+.room_item {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 40% 50%;
+}
+
+.room_item .category_item {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.room_item .price_item {
+  display: grid;
+  grid-template-columns: 20% 60%;
+  gap: 2px;
+}
+
+.price_item img {
+  width: 90%;
+  height: 25px;
+}
+
+.book_ct1 .book_section {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.book_section .book_btn {
+  border: none;
+  height: 32px;
+  font-size: 13px;
+  width: 90px;
+  cursor: pointer;
+  background-color: #235784;
+  color: #d8eaf4;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: transform ease-in-out 0.3s;
+}
+
+.book_btn:hover {
+  transform: scale(1.1);
+}

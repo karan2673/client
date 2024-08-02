@@ -1,0 +1,593 @@
+.page_wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff; /* Apply background color to the entire page */
+}
+
+.home_heading {
+  width: 100%;
+  height: 550px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+/* -------left Part----------- */
+.home_heading .left_part {
+  padding-left: 180px;
+  padding-top: 55px;
+}
+
+.home_heading .left_part .card1 {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  background-color: #f7fafd;
+  height: 400px;
+  width: 100%;
+}
+
+.home_heading .left_part .card1 .card1_head {
+  font-size: 28px;
+  text-align: left;
+  padding: 50px 60px;
+  font-weight: 650;
+}
+.vertical_line {
+  margin-top: 32%;
+  margin-left: 60px;
+  width: 3px;
+  height: 62px;
+  background-color: darkblue;
+}
+
+.card1_text {
+  display: grid;
+  grid-template-rows: 40% 60%; /* Two rows */
+  grid-template-columns: auto 1fr; /* First column for vertical line, second column for text and button */
+  grid-gap: 20px; /* Adjust the gap between rows and columns */
+}
+
+.card1_text p {
+  margin-right: 10%;
+}
+.card1_btn {
+  padding: 4px;
+  grid-column: span 2; /* Make the button span across both columns */
+}
+
+.card1_btn input[type="text"] {
+  height: 30px;
+  width: 240px;
+  margin-left: 57px;
+  font-size: 15px;
+  color: black;
+  border-color: rgb(95, 93, 93);
+  border-radius: 22px 0px 0px 22px;
+  border: 1px solid; /* Add transparent border */
+  transition: border-color 0.3s ease, font-size 0.3s ease, color 0.3s ease; /* Add transition effect */
+}
+
+.card1_btn input[type="text"]:hover {
+  border-width: 1.5px;
+  border-color: #00974e; /* Change border color on hover */
+}
+
+.card1_btn input[type="text"]::placeholder {
+  background-color: #fff;
+  padding: 15px;
+  color: #677aa4;
+}
+
+.card1_btn input[type="text"]:focus {
+  outline: #080a0d; /* Remove outline on focus */
+}
+
+.card1_btn button {
+  background-color: #007bff;
+  color: #fff;
+  border: none !important;
+  border-radius: 0px 25px 25px 0px;
+  height: 30px;
+  width: 80px;
+  font-size: 15px;
+}
+
+.card1_btn button:hover {
+  font-weight: 520;
+  background-color: rgb(44, 165, 103);
+}
+
+/* ------------ Right Part -----------------  */
+.right_part img {
+  width: 100%;
+}
+
+/* ------------- Rooms Description ----------------- */
+
+.home_container .rooms {
+  width: 100%;
+  height: 640px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 55% 1fr;
+}
+
+/* ---------------- Room left part -------------------*/
+.rooms .rooms_left {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 80%;
+  background-color: #f7fafd;
+}
+
+.rooms .rooms_left .rooms_heading {
+  position: absolute;
+  left: 23%;
+  padding-top: 60px;
+}
+
+.rooms .rooms_left .rooms_card {
+  display: flex;
+  justify-content: center; /* Center the cards horizontally */
+  align-items: center; /* Center the cards vertically */
+  gap: 20px; /* Adjust the gap between cards as needed */
+}
+
+.rooms .rooms_left .rooms_card .rcard1,
+.rooms .rooms_left .rooms_card .rcard2 {
+  width: 300px;
+  height: 63.4vh;
+  background-color: #fff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  border-radius: 12px 12px 12px 12px;
+}
+
+.rooms .rooms_left .rooms_card .rcard1 {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 3px;
+}
+
+.rooms_card .rcard1 img,
+.rooms_card .rcard2 img {
+  border-radius: 12px 12px 0px 0px;
+}
+
+.rooms_card .rcard1 .rcard1_h,
+.rooms_card .rcard2 .rcard2_h {
+  padding: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 550;
+  text-align: center;
+}
+
+.rooms_card .rcard1 .rcard1_t,
+.rooms_card .rcard2 .rcard2_t {
+  display: flex;
+  align-items: center;
+}
+
+.rooms_card .rcard1 .rcard1_t img,
+.rooms_card .rcard2 .rcard2_t img {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.rooms_card .rcard1 .rcard1_t p,
+.rooms_card .rcard2 .rcard2_t p {
+  font-weight: 400;
+  padding-right: 4px;
+  font-family: "Gill  Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 19px;
+  margin: 0;
+}
+
+.rooms_card .rcard1 .rcard1_last,
+.rooms_card .rcard2 .rcard2_last {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.rooms_card .rcard1 .rcard1_last img,
+.rooms_card .rcard2 .rcard2_last img {
+  width: 18%;
+  margin-top: 10px;
+  margin-right: 12px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.rcard1_last,
+.rcard2_last {
+  position: relative;
+}
+
+.rcard1_last img,
+.rcard2_last img {
+  transition: transform 0.3s ease;
+  transform-origin: left center; /* Set the transform origin to the left */
+}
+
+.rcard1_last:hover img,
+.rcard2_last:hover img {
+  transform: scaleX(1.3); /* Increase the size when hovering */
+}
+
+.rooms_card .rcard1 .available_link,
+.rooms_card .rcard2 .available_link {
+  text-decoration: none;
+}
+.rooms_card .rcard1 .available_link p,
+.rooms_card .rcard2 .available_link p {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #2c5c88;
+  padding-left: 12px;
+  text-decoration: none;
+}
+
+/* -------------------- Rooms Right Part ----------- */
+.rooms .rooms_right {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 146px;
+  border-radius: 12px;
+  width: 100%;
+  height: 200px;
+}
+
+.rooms .rooms_right .rooms_heading {
+  position: absolute;
+  left: 23%;
+  padding-top: 60px;
+}
+
+.rooms .rooms_right .rooms_card {
+  margin-left: 10px;
+  background-color: #2c5c88;
+  border-radius: 12px 12px 12px 12px;
+}
+
+.rooms .rooms_right .rooms_card .rcard {
+  width: 330px;
+  height: 63.4vh;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-rows: 32% 20% 30%;
+  gap: 3px;
+}
+
+.rooms_right .rooms_card .rcard .r1 {
+  color: #fff;
+  padding-left: 22px;
+  padding-top: 40px;
+}
+.rooms_right .rooms_card .rcard .r1 h1 {
+  margin: 0;
+}
+
+.rooms_right .rooms_card .rcard .r2 h3 {
+  padding-left: 22px;
+  padding-right: 7px;
+  text-align: left;
+  color: #fff;
+}
+
+.rooms_right .rooms_card .rcard .r3 {
+  display: grid;
+  grid-template-columns: 10% 80%;
+  gap: 5px;
+}
+
+.rooms_right .rooms_card .rcard .r3 p {
+  margin-top: 5px; /* Adjust the value as needed */
+}
+
+.vertical_line1 {
+  margin-top: 44%;
+  margin-left: 22px;
+  width: 3px;
+  height: 102px;
+  background-color: #fff;
+}
+
+.r3 p {
+  color: #fff;
+}
+
+.r4 .book_btn {
+  position: absolute;
+  margin-top: 5px;
+  left: 5%;
+  width: 135px;
+  height: 40px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: 580;
+  background-color: #ddeaf6;
+  transition: transform 0.5s ease-in-out; /* Adjusted transition property */
+  transform-origin: center;
+}
+.r4 .book_btn:hover {
+  transform: scaleX(1.1);
+}
+
+.r4 .r_link {
+  font-weight: 550;
+  color: #2c5c88;
+
+  text-decoration: none;
+}
+
+/* ----------------- about ------------------------ */
+
+/* ----------------- about-1 ----------------------- */
+.about_everything {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 500px;
+}
+
+.about_everything h1 {
+  margin-top: 15px;
+}
+
+.about_everything .about_1 {
+  display: grid;
+  grid-template-columns: 37% 58.5%;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+.about_everythnig .about_1 {
+  display: grid;
+  grid-template-rows: 20% 0% 20%;
+}
+.about_everything .about_1 h1 {
+  margin-top: 15%;
+}
+
+.about_everything .about_1 h4 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 450;
+  color: #929ba2;
+}
+/* -------------- about part-2 ------------------- */
+
+.about_t2 {
+  display: grid;
+  grid-template-columns: auto auto 8% auto; /* Two columns */
+  grid-gap: 15px; /* Gap between grid items */
+}
+
+.about_t2 img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+}
+
+.about_t2 p {
+  margin: 1px; /* Remove default margin */
+  font-size: 13px;
+  color: #929ba2;
+}
+
+/* ------------------ About Part-3 ---------------- */
+.about_t3 {
+  width: 100px;
+  height: 50px;
+}
+.about_t3 .book {
+  height: 35px;
+  width: 90px;
+  border: none;
+  border-radius: 10px;
+  background-color: #2c5c88;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about_t3 .book:hover {
+  transform: scale(1.09);
+}
+
+/* --------------- About_2 --------------- */
+.about_everything .about_2 video {
+  width: 100%;
+}
+
+/* --------------- Reviews ------------------ */
+.reviews {
+  display: grid;
+  grid-template-columns: 41.5% 30%;
+  gap: 9px;
+  height: 500px;
+}
+
+/* --------------- Reviews1 -------------------- */
+.reviews .reviews1 {
+  display: grid;
+  grid-template-columns: 42% 62%;
+  gap: 10px;
+}
+
+.reviews .reviews1 .carousel {
+  width: 100%;
+}
+
+.reviews1 .carousel img {
+  border-radius: 12px;
+}
+
+/* -------------------- Reviews2 ---------------- */
+.reviews .reviews2 {
+  display: grid;
+  grid-template-rows: 20% 80%;
+}
+
+.reviews .reviews2 .reviews2_heading {
+  margin-left: 7%;
+  margin-top: 20px;
+  text-align: left;
+  font-size: 35px;
+  font-weight: 580;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.reviews .reviews2 .reviews2_text .carousel2 {
+  width: 51%;
+  border-radius: 12px;
+  margin-left: 7%;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+.reviews2 .carousel2 .carousel_card {
+  /* background-color: #945555; */
+  width: 100%;
+  border-radius: 12px;
+  display: grid;
+  grid-template-rows: 20% 80%;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.reviews2 .carousel2 .carousel_card .carousel_reviews {
+  margin-top: 5px;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.reviews .carousel2 .carousel_card .year {
+  font-weight: 300;
+}
+.carousel_card .text p {
+  font-size: 13px;
+}
+
+.carousel_card .text .reviewer {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* -----------------------------Locations--------------------------- */
+.locations {
+  background-color: #f7fafd;
+  height: 500px;
+}
+
+.locations .locations_heading {
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.locations .locations_container {
+  margin-top: 20px;
+  display: grid;
+  height: 400px;
+  background-color: #f7fafd;
+  grid-template-columns: 24% 24% 24%;
+  gap: 30px;
+  justify-content: center;
+}
+
+.locations_container .locations_card {
+  margin-top: 14px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  width: 100%;
+  height: 350px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.locations_card img {
+  border-radius: 12px 12px 0px 0px;
+  width: 100%;
+  height: 300px;
+}
+
+.locations_card .card_h {
+  /* background-color: #00974e; */
+  color: #2c5c88;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* Contact Starting */
+.contact {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 500px;
+  background-color: #ffffff;
+}
+
+/* 1. Left Part */
+.contact .contact_left {
+  display: grid;
+  grid-template-columns: 35% 60%;
+}
+
+.contact_left .contact_left2 {
+  display: grid;
+  grid-template-rows: 25% 10% 50%;
+}
+.contact_left2 .contact_heading {
+  font-size: 43px;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.contact_left2 .contact_details {
+  display: grid;
+  grid-template-rows: 35% 27%;
+}
+
+.contact_details .details1 p {
+  margin-top: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: justify;
+}
+
+.details2,
+.details3 {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 10% 30% 4% 10% 30%;
+}
+
+.details2 img,
+.details3 img {
+  padding-top: 5px;
+  width: 40px;
+}
+.details2 p,
+.details3 p {
+  font-size: 17px;
+}
+
+/* Contact Ending */
+
+
+
+/* Adjust background color for smaller screens */
+@media (max-width: 768px) {
+  .page_wrapper {
+    background-color: rgba(
+      221,
+      227,
+      238,
+      0.8
+    ); /* Example: reduce opacity for smaller screens */
+  }
+}

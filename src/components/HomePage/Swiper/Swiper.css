@@ -1,0 +1,33 @@
+.photos_rooms {
+  background-color: #ffff;
+  height: 550px;
+}
+
+.photos_rooms .heading {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 900;
+}
+.swiper {
+  margin-top: 20px;
+  width: 1150px;
+  background-color: #f7fafd;
+  height: 65vh; /* Set height to fill the entire viewport */
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: contain;
+  width: 380px;
+  height: 350px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
